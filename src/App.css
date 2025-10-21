@@ -1,0 +1,99 @@
+/* App.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full-screen background */
+.app-background {
+  background-image: url('/bg.jpeg'); /* works with public/bg.jpeg */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Contact form container */
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form title */
+.contact-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Inputs and textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Focused inputs */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #0078ff;
+  background-color: #f7f7f7;
+}
+
+/* Button styling */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fcc;
+  transform: translateY(-2px);
+}
+
+.contact-form button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Status message */
+.status-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #f1f1f1;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
